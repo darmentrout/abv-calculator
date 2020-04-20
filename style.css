@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    /* Photo by Adam Wilson on Unsplash */
+    background-image: url(adam-wilson-I2f5BbeXPVY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: block;
+    margin: .5rem auto;
+}
+
+.orange-input {
+    background: orange;
+    border: 1px solid darkorange;
+}
+
+.top-2-rem {
+    margin-top: 2rem;
+}
+
+.result {
+    font-size: 2rem;
+}
+
+form {
+    width: 50vw;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,.9);
+}
+
+input {
+    width: 75%;
+    padding: 0px;
+    padding: .4rem .2rem;
+    transition: all .2s linear;
+}
+
+input:invalid:required {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+input:disabled {
+    background-color: #F0F0EF;
+    border: 1px solid #666;
+}
+
+hr {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    margin: 1rem auto;
+}
+
+#copyright {
+    margin-top: 3rem;
+    font-size: .9rem;
+    text-align: center;
+}

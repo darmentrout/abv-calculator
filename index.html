@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABV Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="abvForm">
+    <h1>ABV Calculator</h1>
+    <p>
+        Calculate the Alcohol by Volume (ABV) of your home-brewed beer using the following formula:<br>
+        <code>ABV = ((((OG-FG)*1.05)/FG)/0.79)*100</code><br>
+        <small>1.05 g — the amount of CO2 per gram of ethanol produced<br>
+        0.79 g/mL  – the density of ethanol alcohol</small>
+    </p>
+
+    <hr>
+
+    <label for="OG" class="block">Original Gravity: </label>
+    <input id="OG" class="block" type="number" step="0.01" value="" required>
+
+    <label for="Otemp" class="block">Original Temperature: </label>
+    <input id="Otemp" class="block" type="number" value="0" required>
+
+    <label for="FG" class="block">Final Gravity: </label>
+    <input id="FG" class="block" type="number" step="0.01" value="0" required>
+
+    <label for="Ftemp" class="block">Final Temperature: </label>
+    <input id="Ftemp" class="block" type="number" value="0" required>
+
+    <input id="compute" class="block orange-input top-2-rem" value="Compute" type="submit">
+
+    <p class="block result">ABV: <span id="result">0.00</span>%</p>
+
+    <input class="block top-2-rem" type="reset">
+
+    <hr>
+
+    <p id="copyright">&copy <span id="copyrightYear">MMXX</span> Damion Armentrout</p>
+</form>
+
+
+
+<script src="abv.js"></script>
+
+</body>
+</html>
