@@ -16,7 +16,19 @@ body {
 
 .orange-input {
     background: orange;
-    border: 1px solid darkorange;
+    border: 1px solid #999;
+}
+
+.gray-input {
+    background: #ddd;
+    border: 1px solid #999;
+}
+
+.orange-input:focus,
+.gray-input:focus,
+.orange-input:hover,
+.gray-input:hover {
+    text-decoration: underline;
 }
 
 .top-2-rem {
